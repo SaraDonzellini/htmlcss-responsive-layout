@@ -9,6 +9,10 @@
   display: flex;
 }
 
+.flex-column{
+  flex-direction: column;
+}
+
 .flex-centered{
   justify-content: center;
   align-items: center;
@@ -23,14 +27,10 @@
 }
 
 
-.container100{
+.container{
   width: 100%;
+  margin: 0 auto;
 }
-
-.container80{
-  width: 80%;
-}
-
 
 header{
   background-color: #0084fd;
@@ -47,19 +47,77 @@ div.menu{
   padding-right: 2rem;
 }
 
+div.menus{
+  display: none;
+}
+
+div.menus ul li{
+  display: inline;
+}
+
+
 div.cards{
-  height: 1000px;
+  height: 100%;
 }
 
 article.card{
   background-color: #b5ddff;
-  height: calc(100% / 3);
-  width: 400px;
-  border: 1px dashed turquoise;
-  margin-top: 1rem;
+  width: 90%;
+  height: 300px;
+  border: 1px dashed rgb(0, 0, 0);
+  margin: 1rem auto;
   
 }
 
-article.card:first-child{
-  height: calc((100% / 3) * 2);
+
+div.planning{
+  background-color: #9792e4;
+  /* height: 100vh; */
+  
+}
+
+
+
+
+
+/* RESPONSIVENESS */
+
+@media screen and (min-width: 480px) {
+  .flex-wrap{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  article.card{
+    width: calc(100% / 3);
+    height: 300px;
+    
+  }
+  
+  article.card:first-child{
+    width: calc((100% / 3) * 2);
+
+  }
+  
+}
+
+
+@media screen and (min-width: 768px) {
+  .container{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  div.menus{
+    display: inline;
+  }
+
+  div.icon{
+    display: none;
+  }
+
 }
