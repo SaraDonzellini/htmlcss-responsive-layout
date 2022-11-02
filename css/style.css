@@ -267,6 +267,19 @@ section.aboutus img{
   height:10rem;
 }
 
+div.padd{
+  padding-top: 3rem;
+  position: relative;
+}
+
+div.padd span{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  font-size: 2rem;
+  color: #9792e4;
+}
+
 footer{
   background-color: #333333;
   padding: 3rem;
