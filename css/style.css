@@ -32,13 +32,10 @@ body{
 
 .container{
   width: 100%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-.containercolor{
-  width: 100%;
-  margin: 0 auto;
-}
 
 h1{
 font-size: 2rem;
@@ -149,7 +146,7 @@ div.menus ul li{
 div.img img{
   height: 200px;
   position: relative;
-  top: 12px;
+  top: 18px;
 }
 
 
@@ -200,6 +197,9 @@ article.second{
   padding: 1rem;
   border-radius: 20px;
 
+}
+div.color{
+  background-color: #9792e4;
 }
 
 article.info{
@@ -292,13 +292,13 @@ footer p{
 
 /* RESPONSIVENESS */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .flex-wrap{
     flex-direction: row;
     flex-wrap: wrap;
   }
   .container{
-    width: 90%;
+    max-width: 750px;
     margin: 0 auto;
   }
 
@@ -327,9 +327,9 @@ footer p{
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .container{
-    width: 70%;
+    max-width: 850px;
     margin: 0 auto;
   }
 
