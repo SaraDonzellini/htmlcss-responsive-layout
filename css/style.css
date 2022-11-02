@@ -93,7 +93,15 @@ button.start{
   text-align: center;
 }
 
-
+button.getstart{
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 25px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+}
 
 
 
@@ -111,6 +119,7 @@ div.menus{
 
 div.menus ul li{
   display: inline;
+  padding: 0.5rem;
 }
 
 
