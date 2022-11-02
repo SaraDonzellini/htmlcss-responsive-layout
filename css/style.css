@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .flex{
   display: flex;
@@ -32,12 +35,28 @@
   margin: 0 auto;
 }
 
+.containercolor{
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1{
+font-size: 2rem;
+color: #9792e4;
+padding: 1rem;
+}
+
 header{
   background-color: #0084fd;
   color: white;
   height: 85px;
   align-items: center;
 }
+
+footer{
+  background-color: #333333;
+}
+
 
 div.logo{
   padding-left: 2rem;
@@ -60,22 +79,45 @@ div.cards{
   height: 100%;
 }
 
-article.card{
+article.card,
+article.plan,
+article.info,
+article.benefit{
   background-color: #b5ddff;
   width: 90%;
-  height: 300px;
+  height: 400px;
   border: 1px dashed rgb(0, 0, 0);
   margin: 1rem auto;
   
 }
 
 
-div.planning{
+div.planning,
+section.benefits,
+section.getstarted{
   background-color: #9792e4;
   /* height: 100vh; */
   
 }
 
+
+
+section.testimonials{
+  text-align: center;
+}
+
+p.title{
+  padding-top: 5rem;
+}
+
+section.aboutus p{
+  padding: 1rem;
+}
+
+section.getstarted p{
+  padding: 1rem;
+  text-align: center;
+}
 
 
 
@@ -120,4 +162,9 @@ div.planning{
     display: none;
   }
 
+  div.planning{
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 5rem 10rem;
+  }
 }
