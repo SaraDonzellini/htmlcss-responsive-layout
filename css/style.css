@@ -53,8 +53,14 @@ h2{
   text-align: center;
 }
 
+h3{
+  color: #9792e4;
+}
+
 h4{
   text-align: center;
+  color: #fdc15f;
+  font-size: 3rem;
 }
 
 h5{
@@ -104,13 +110,19 @@ button.appstore{
   border-radius: 25px;
   background-color: #0084fd;
   color: white;
-  margin: 0 auto;
+  margin: 1rem auto;
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
 }
 
-
+button.down{
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 25px;
+  background-color: #9792e4;
+  margin: 1rem;
+}
 
 
 div.logo{
@@ -125,6 +137,10 @@ div.menus{
   display: none;
 }
 
+div.icon{
+  font-size: 2rem;
+}
+
 div.menus ul li{
   display: inline;
   padding: 0.5rem;
@@ -132,7 +148,11 @@ div.menus ul li{
 
 div.img img{
   height: 200px;
+  position: relative;
+  top: 12px;
 }
+
+
 
 div.cards{
   height: 100%;
@@ -142,14 +162,65 @@ article.card,
 article.plan,
 article.info,
 article.benefit{
-  background-color: #b5ddff;
   width: 90%;
   /* height: 400px; */
   /* border: 1px dashed rgb(0, 0, 0); */
   margin: 1rem auto;
   
 }
+article.card{
+  background-color: #b5ddff;
+  border-radius: 20px;
+  padding: 0.5rem;
+  text-align: center;
+}
 
+article.card i.fa-solid{
+  font-size: 6rem;
+  color: #0084fd;
+  text-align: center;
+}
+
+article.plan{
+  color: white;
+  text-align: center;
+}
+
+article.plan h2{
+  margin-top: 5rem;
+}
+
+article.plan img{
+  width: 90%;
+}
+article.second{
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 20px;
+
+}
+
+article.info{
+  background-color: #9792e4;
+  border-radius: 20px;
+  color: white;
+  padding: 1rem;
+}
+
+article.info img{
+  width: 90%;
+  padding: 0 2rem;
+  border-radius: 50%;
+}
+
+article.benefit{
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem;
+}
 
 div.planning,
 section.benefits,
@@ -159,6 +230,9 @@ section.getstarted{
   
 }
 
+section.getstarted{
+  color: white;
+}
 
 
 section.testimonials{
@@ -167,6 +241,10 @@ section.testimonials{
 
 p.title{
   padding-top: 5rem;
+}
+
+p.little{
+  font-size: 0.7rem;
 }
 
 section.aboutus p{
@@ -212,19 +290,21 @@ footer p{
   }
 
   article.card{
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 1rem);
+    margin: 0.5rem;
     /* height: 300px; */
   }
   article.card:first-child{
-    width: calc((100% / 3) * 2);
+    width: calc((100% / 3) * 2 - 1rem);
   }
-  article.card1{
+  article.info{
     flex-direction: row;
+    align-items: center;
   }
 
 
   article.benefit{
-    width: calc(100% / 2);
+    width: calc(100% / 2 - 2rem);
     flex-wrap: wrap;
   }
 
@@ -246,6 +326,7 @@ footer p{
 
   div.icon{
     display: none;
+    
   }
 
   div.planning{
@@ -255,7 +336,12 @@ footer p{
   }
 
   article.benefit{
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 2rem);
     flex-wrap: nowrap;
   }
+  article.card1{
+    flex-direction: row;
+  }
+
+
 }
