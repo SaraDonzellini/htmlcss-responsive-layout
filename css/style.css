@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .flex{
@@ -46,6 +46,18 @@ color: #9792e4;
 padding: 1rem;
 }
 
+h2{
+  color: white;
+  font-size: 2rem;
+  padding:1rem;
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+}
+
+
 header{
   background-color: #0084fd;
   color: white;
@@ -55,7 +67,34 @@ header{
 
 footer{
   background-color: #333333;
+  padding: 3rem;
 }
+
+
+footer p{
+  padding-bottom: 2rem;
+}
+
+/* buttons */
+button.linkedin{
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 25px;
+  background-color: #9792e4;
+  margin-bottom: 5rem;
+}
+
+button.start{
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: 25px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
 
 
 div.logo{
@@ -114,12 +153,21 @@ section.aboutus p{
   padding: 1rem;
 }
 
+section.getstarted{
+  justify-content: center;
+  align-items: center;
+}
+
+
 section.getstarted p{
   padding: 1rem;
   text-align: center;
 }
 
-
+section.aboutus img{
+  border-radius: 50%;
+  height:10rem;
+}
 
 
 /* RESPONSIVENESS */
@@ -142,9 +190,16 @@ section.getstarted p{
   
   article.card:first-child{
     width: calc((100% / 3) * 2);
-
   }
   
+  article.benefit{
+    width: calc(100% / 2);
+    flex-wrap: wrap;
+  }
+
+  section.aboutus{
+    flex-direction: row;
+  }
 }
 
 
@@ -166,5 +221,10 @@ section.getstarted p{
     flex-direction: row;
     align-items: flex-end;
     padding: 5rem 10rem;
+  }
+
+  article.benefit{
+    width: calc(100% / 3);
+    flex-wrap: nowrap;
   }
 }
