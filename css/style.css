@@ -4,3 +4,62 @@
   box-sizing: border-box;
 }
 
+
+.flex{
+  display: flex;
+}
+
+.flex-centered{
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between{
+  justify-content: space-between;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+
+.container100{
+  width: 100%;
+}
+
+.container80{
+  width: 80%;
+}
+
+
+header{
+  background-color: #0084fd;
+  color: white;
+  height: 85px;
+  align-items: center;
+}
+
+div.logo{
+  padding-left: 2rem;
+}
+
+div.menu{
+  padding-right: 2rem;
+}
+
+div.cards{
+  height: 1000px;
+}
+
+article.card{
+  background-color: #b5ddff;
+  height: calc(100% / 3);
+  width: 400px;
+  border: 1px dashed turquoise;
+  margin-top: 1rem;
+  
+}
+
+article.card:first-child{
+  height: calc((100% / 3) * 2);
+}
