@@ -66,7 +66,13 @@ h4 {
   text-align: center;
   color: var(--secondary-accent-color);
   font-size: 3rem;
+  transition: all 1s ease-in-out;
 }
+
+h4:hover{
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
 
 h5 {
   font-size: 1.5rem;
@@ -90,6 +96,7 @@ button.linkedin {
   background-color: var(--main-bg-color);
   margin-bottom: 5rem;
   margin-left: 1rem;
+  transition: all 1s ease-in-out;
 }
 
 button.start {
@@ -99,6 +106,7 @@ button.start {
   background-color: var(--main-text-color);
   margin: 0 auto;
   text-align: center;
+  transition: all 1s ease-in-out;
 }
 
 button.getstart {
@@ -109,6 +117,7 @@ button.getstart {
   margin: 0 auto;
   text-align: center;
   font-size: 1rem;
+  transition: all 1s ease-in-out;
 }
 
 button.appstore {
@@ -121,6 +130,7 @@ button.appstore {
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
+  transition: all 1s ease-in-out;
 }
 
 button.down {
@@ -129,12 +139,39 @@ button.down {
   border-radius: 25px;
   background-color: var(--main-bg-color);
   margin: 1rem;
+  transition: all 1s ease-in-out;
 }
 
 button:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
 }
+
+button.linkedin:hover{
+  background-color: black;
+  color: var(--main-bg-color);
+}
+
+button.start:hover{
+  background-color: black;
+  color: var(--main-bg-color);
+}
+
+button.getstart:hover{
+  background-color: var(--secondary-bg-color);
+  color: var(--main-text-color);
+}
+
+button.appstore:hover{
+  background-color: var(--main-text-color);
+  color: var(--main-accent-color);
+}
+
+button.down:hover{
+  background-color: black;
+  color: var(--main-bg-color);
+}
+
 
 div.logo {
   padding-left: 2rem;
@@ -243,6 +280,11 @@ article.info img {
   height: 200px;
   /* padding: 0 2rem; */
   border-radius: 50%;
+  transition: all 1s ease-in-out;
+}
+
+article.info img:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 article.benefit {
@@ -312,6 +354,11 @@ section.getstarted p {
 section.aboutus img {
   border-radius: 50%;
   height: 10rem;
+  transition: all 1s ease-in-out;
+}
+
+section.aboutus img:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 figure {
