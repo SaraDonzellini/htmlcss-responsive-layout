@@ -1,3 +1,14 @@
+:root{
+  --main-bg-color: #9792e4;
+  --secondary-bg-color: #b5ddff;
+  --main-accent-color: #0084fd;
+  --secondary-accent-color: #fdc15f;
+  --main-text-color: white;
+}
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -37,36 +48,36 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: #9792e4;
+  color: var(--main-bg-color);
   padding: 1rem;
 }
 
 h2 {
-  color: white;
+  color: var(--main-text-color);
   font-size: 2rem;
   padding: 1rem;
   text-align: center;
 }
 
 h3 {
-  color: #9792e4;
+  color: var(--main-bg-color);
 }
 
 h4 {
   text-align: center;
-  color: #fdc15f;
+  color: var(--secondary-accent-color);
   font-size: 3rem;
 }
 
 h5 {
   font-size: 1.5rem;
-  color: #0084fd;
+  color: var(--main-accent-color);
   padding: 1rem;
 }
 
 header {
-  background-color: #0084fd;
-  color: white;
+  background-color: var(--main-accent-color);
+  color: var(--main-text-color);
   height: 85px;
   align-items: center;
 }
@@ -76,7 +87,7 @@ button.linkedin {
   border: none;
   padding: 0.5rem 0.5rem;
   border-radius: 25px;
-  background-color: #9792e4;
+  background-color: var(--main-bg-color);
   margin-bottom: 5rem;
 }
 
@@ -84,7 +95,7 @@ button.start {
   border: none;
   padding: 1rem 1rem;
   border-radius: 25px;
-  background-color: #ffffff;
+  background-color: var(--main-text-color);
   margin: 0 auto;
   text-align: center;
 }
@@ -93,7 +104,7 @@ button.getstart {
   border: none;
   padding: 0.5rem 0.5rem;
   border-radius: 25px;
-  background-color: #ffffff;
+  background-color: var(--main-text-color);
   margin: 0 auto;
   text-align: center;
   font-size: 1rem;
@@ -103,8 +114,8 @@ button.appstore {
   border: none;
   padding: 0.5rem 0.5rem;
   border-radius: 25px;
-  background-color: #0084fd;
-  color: white;
+  background-color: var(--main-accent-color);
+  color: var(--main-text-color);
   margin: 1rem auto;
   text-align: center;
   font-size: 1rem;
@@ -115,7 +126,7 @@ button.down {
   border: none;
   padding: 0.5rem 0.5rem;
   border-radius: 25px;
-  background-color: #9792e4;
+  background-color: var(--main-bg-color);
   margin: 1rem;
 }
 
@@ -160,7 +171,7 @@ article.benefit {
   margin: 1rem auto;
 }
 article.card {
-  background-color: #b5ddff;
+  background-color:var(--secondary-bg-color);
   border-radius: 20px;
   padding: 0.5rem;
   text-align: center;
@@ -168,12 +179,12 @@ article.card {
 
 article.card i.fa-solid {
   font-size: 6rem;
-  color: #0084fd;
+  color: var(--main-accent-color);
   text-align: center;
 }
 
 article.plan {
-  color: white;
+  color: var(--main-text-color);
   text-align: center;
 }
 
@@ -186,7 +197,7 @@ article.plan img {
 }
 
 article.second {
-  background-color: white;
+  background-color: var(--main-text-color);
   color: black;
   text-align: center;
   padding: 1rem;
@@ -194,13 +205,13 @@ article.second {
 }
 
 div.color {
-  background-color: #9792e4;
+  background-color: var(--main-bg-color);
 }
 
 article.info {
-  background-color: #9792e4;
+  background-color: var(--main-bg-color);
   border-radius: 20px;
-  color: white;
+  color: var(--main-text-color);
   padding: 1rem;
   justify-content: center;
   align-items: center;
@@ -215,7 +226,7 @@ article.info img {
 }
 
 article.benefit {
-  background-color: #ffffff;
+  background-color: var(--main-text-color);
   border-radius: 20px;
   padding: 1rem;
   margin: 1rem;
@@ -224,12 +235,12 @@ article.benefit {
 div.planning,
 section.benefits,
 section.getstarted {
-  background-color: #9792e4;
+  background-color: var(--main-bg-color);
   /* height: 100vh; */
 }
 
 section.getstarted {
-  color: white;
+  color: var(--main-text-color);
 }
 
 section.testimonials {
@@ -278,12 +289,12 @@ div.padd span {
   top: 10%;
   left: 40%;
   font-size: 2rem;
-  color: #9792e4;
+  color: var(--main-bg-color);
 }
 
 footer {
   background-color: #333333;
-  color: white;
+  color: var(--main-text-color);
   padding: 3rem;
   text-align: center;
 }
@@ -293,7 +304,7 @@ footer p {
 }
 
 footer a {
-  color: #9792e4;
+  color: var(--main-bg-color);
 }
 
 
