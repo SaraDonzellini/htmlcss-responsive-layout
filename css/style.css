@@ -40,7 +40,7 @@ body {
 .container {
   width: 100%;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 4rem auto;
 }
 
 h1 {
@@ -79,6 +79,7 @@ header {
   color: var(--main-text-color);
   height: 85px;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 /* buttons */
@@ -156,6 +157,10 @@ div.menus ul li {
   padding: 0.5rem;
 }
 
+article.card1 div.img{
+  justify-content: center;
+}
+
 div.img img {
   height: 200px;
   /* position: relative;
@@ -188,7 +193,7 @@ article.card1 {
 }
 
 article.card i.fa-solid {
-  font-size: 6rem;
+  font-size: 5rem;
   color: var(--main-accent-color);
   text-align: center;
 }
@@ -206,12 +211,17 @@ article.plan img {
   width: 90%;
 }
 
+article.plan img.woman {
+  margin-top: 6rem;
+}
+
 article.second {
   background-color: var(--main-text-color);
   color: black;
   text-align: center;
   padding: 1rem;
   border-radius: 20px;
+  align-self: flex-end;
 }
 
 div.color {
@@ -262,7 +272,8 @@ section.testimonials {
 }
 
 section.benefits h2 {
-  margin: 4rem 0 0 0;
+  padding-top: 4rem;
+  margin: 5rem auto;
 }
 
 p.name {
@@ -271,12 +282,18 @@ p.name {
 }
 
 p.title {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 p.little {
   font-size: 0.7rem;
 }
+
+p.line {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
 
 section.aboutus p {
   padding: 1rem;
@@ -361,6 +378,10 @@ footer a {
 
   section.aboutus {
     flex-direction: row;
+  }
+
+  article.card1 div.img{
+    justify-content: start;
   }
 }
 
