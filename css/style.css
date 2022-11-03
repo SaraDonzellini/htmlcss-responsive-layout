@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .flex {
@@ -271,6 +271,7 @@ section.benefits h2{
 
 p.name{
   padding: 2rem;
+  font-weight: bold;
 }
 
 p.title {
@@ -386,7 +387,8 @@ footer a {
   div.planning {
     flex-direction: row;
     align-items: flex-end;
-    padding: 5rem 10rem;
+    padding: 5rem 8rem;
+    margin: 2rem auto;
   }
 
   article.benefit {
