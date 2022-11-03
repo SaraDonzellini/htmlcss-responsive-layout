@@ -202,6 +202,8 @@ article.info {
   border-radius: 20px;
   color: white;
   padding: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 article.info img {
@@ -232,6 +234,11 @@ section.getstarted {
 
 section.testimonials {
   text-align: center;
+  
+}
+
+p.name{
+  padding: 2rem;
 }
 
 p.title {
@@ -276,7 +283,9 @@ div.padd span {
 
 footer {
   background-color: #333333;
+  color: white;
   padding: 3rem;
+  text-align: center;
 }
 
 footer p {
