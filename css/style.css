@@ -1,4 +1,4 @@
-:root{
+:root {
   --main-bg-color: #9792e4;
   --secondary-bg-color: #b5ddff;
   --main-accent-color: #0084fd;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .flex {
@@ -130,11 +130,10 @@ button.down {
   margin: 1rem;
 }
 
-button:hover{
+button:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  cursor:pointer;
+  cursor: pointer;
 }
-
 
 div.logo {
   padding-left: 2rem;
@@ -177,17 +176,16 @@ article.benefit {
   margin: 1rem auto;
 }
 article.card {
-  background-color:var(--secondary-bg-color);
+  background-color: var(--secondary-bg-color);
   border-radius: 20px;
   padding: 0.5rem;
   text-align: center;
 }
 
-article.card1{
+article.card1 {
   margin: 1rem auto 0 auto;
-  padding:0;
+  padding: 0;
 }
-
 
 article.card i.fa-solid {
   font-size: 6rem;
@@ -255,21 +253,19 @@ section.getstarted {
   color: var(--main-text-color);
 }
 
-section.getstarted a{
+section.getstarted a {
   color: var(--main-text-color);
 }
 
-
 section.testimonials {
   text-align: center;
-  
 }
 
-section.benefits h2{
+section.benefits h2 {
   margin: 4rem 0 0 0;
 }
 
-p.name{
+p.name {
   padding: 2rem;
   font-weight: bold;
 }
@@ -301,14 +297,13 @@ section.aboutus img {
   height: 10rem;
 }
 
-figure{
+figure {
   position: relative;
 }
 
 div.padd {
   margin: 1rem;
   padding-top: 3rem;
-  
 }
 
 div.padd span {
@@ -333,7 +328,6 @@ footer p {
 footer a {
   color: var(--main-bg-color);
 }
-
 
 /* RESPONSIVENESS */
 
@@ -399,6 +393,6 @@ footer a {
     flex-direction: row;
   }
   div.img img {
-    align-self:flex-end;
+    align-self: flex-end;
   }
 }
