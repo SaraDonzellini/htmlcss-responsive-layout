@@ -69,11 +69,10 @@ h4 {
   transition: all 1s ease-in-out;
 }
 
-h4:hover{
+h4:hover {
   /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
-  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
-
 
 h5 {
   font-size: 1.5rem;
@@ -148,31 +147,30 @@ button:hover {
   cursor: pointer;
 }
 
-button.linkedin:hover{
+button.linkedin:hover {
   background-color: black;
   color: var(--main-bg-color);
 }
 
-button.start:hover{
+button.start:hover {
   background-color: black;
   color: var(--main-bg-color);
 }
 
-button.getstart:hover{
+button.getstart:hover {
   background-color: var(--secondary-bg-color);
   color: var(--main-text-color);
 }
 
-button.appstore:hover{
+button.appstore:hover {
   background-color: var(--main-text-color);
   color: var(--main-accent-color);
 }
 
-button.down:hover{
+button.down:hover {
   background-color: black;
   color: var(--main-bg-color);
 }
-
 
 div.logo {
   padding-left: 2rem;
@@ -195,7 +193,7 @@ div.menus ul li {
   padding: 0.5rem;
 }
 
-article.card1 div.img{
+article.card1 div.img {
   justify-content: center;
 }
 
@@ -203,32 +201,31 @@ div.img img {
   height: 200px;
   /* position: relative;
   top: 18px; */
-
 }
 
 div.img img:hover {
-animation: vibrate 1s ease;
-animation-iteration-count: infinite;
+  animation: vibrate 1s ease;
+  animation-iteration-count: infinite;
 }
 @keyframes vibrate {
-15% {
-transform: translateX(5px);
-}
-30% {
-transform: translateX(-5px);
-}
-50% {
-transform: translateX(3px);
-}
-65% {
-transform: translateX(-3px);
-}
-80% {
-transform: translateX(2px);
-}
-100% {
-transform: translateX(0);
-}
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  65% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 div.cards {
@@ -282,100 +279,106 @@ article.plan img.woman {
 article.plan img.woman {
   animation: swing 2s ease;
   animation-iteration-count: infinite;
-  }
-  @keyframes swing {
+}
+@keyframes swing {
   25% {
-  transform: rotate(7deg);
+    transform: rotate(7deg);
   }
   50% {
-  transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   75% {
-  transform: rotate(-7deg);
+    transform: rotate(-7deg);
   }
   100% {
-  transform: rotate(0);
+    transform: rotate(0);
   }
+}
+
+article.plan img.man {
+  animation: bounce 2s ease;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
-  article.plan img.man{
-    animation: bounce 2s ease;
-    animation-iteration-count: infinite;
-  }
-  @-webkit-keyframes bounce {
-    from, 20%, 53%, 80%, to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  
-    40%, 43% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      -webkit-transform: translate3d(0, -30px, 0);
-      transform: translate3d(0, -30px, 0);
-    }
-  
-    70% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      -webkit-transform: translate3d(0, -15px, 0);
-      transform: translate3d(0, -15px, 0);
-    }
-  
-    90% {
-      -webkit-transform: translate3d(0, -4px, 0);
-      transform: translate3d(0, -4px, 0);
-    }
-  }
-  
-  @keyframes bounce {
-    from, 20%, 53%, 80%, to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  
-    40%, 43% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      -webkit-transform: translate3d(0, -30px, 0);
-      transform: translate3d(0, -30px, 0);
-    }
-  
-    70% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      -webkit-transform: translate3d(0, -15px, 0);
-      transform: translate3d(0, -15px, 0);
-    }
-  
-    90% {
-      -webkit-transform: translate3d(0, -4px, 0);
-      transform: translate3d(0, -4px, 0);
-    }
-  }
-  
-  .bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-  
-  .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
   }
 
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
 
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
 
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-  
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 article.second {
   background-color: var(--main-text-color);
   color: black;
@@ -407,8 +410,10 @@ article.info img {
   transition: all 1s ease-in-out;
 }
 
-article.info img:hover{
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+article.info img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 article.benefit {
@@ -460,7 +465,6 @@ p.line {
   font-size: 1.2rem;
 }
 
-
 section.aboutus p {
   padding: 1rem;
 }
@@ -481,8 +485,10 @@ section.aboutus img {
   transition: all 1s ease-in-out;
 }
 
-section.aboutus img:hover{
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+section.aboutus img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 figure {
@@ -551,7 +557,7 @@ footer a {
     flex-direction: row;
   }
 
-  article.card1 div.img{
+  article.card1 div.img {
     justify-content: start;
   }
 }
