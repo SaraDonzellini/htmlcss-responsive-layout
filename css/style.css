@@ -6,9 +6,6 @@
   --main-text-color: white;
 }
 
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +58,8 @@ h2 {
 
 h3 {
   color: var(--main-bg-color);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
 h4 {
@@ -129,6 +128,12 @@ button.down {
   background-color: var(--main-bg-color);
   margin: 1rem;
 }
+
+button:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor:pointer;
+}
+
 
 div.logo {
   padding-left: 2rem;
@@ -243,9 +248,18 @@ section.getstarted {
   color: var(--main-text-color);
 }
 
+section.getstarted a{
+  color: var(--main-text-color);
+}
+
+
 section.testimonials {
   text-align: center;
   
+}
+
+section.benefits h2{
+  margin: 4rem 0 0 0;
 }
 
 p.name{
@@ -279,15 +293,20 @@ section.aboutus img {
   height: 10rem;
 }
 
-div.padd {
-  padding-top: 3rem;
+figure{
   position: relative;
+}
+
+div.padd {
+  margin: 1rem;
+  padding-top: 3rem;
+  
 }
 
 div.padd span {
   position: absolute;
   top: 10%;
-  left: 40%;
+  left: 120px;
   font-size: 2rem;
   color: var(--main-bg-color);
 }
